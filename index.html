@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>My website</title>
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">Afif Bajra Hawari Anhar</a>
+		<div class="toogle"></div>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="about/index.html">About</a></li>
+			<li><a href="contact/index.html">Contact</a></li>
+			<li><a href="galery/index.html">Gelery</a></li>
+		</ul>
+	</header>
+	<section class="banner">
+		<div class="textBx">
+			<h2>Hello i'm <br><span>Afif Bajra Hawari Anhar</span></h2>
+			<h3>I am <span class="auto-input"></span></h3>
+			<a href="about/index.html" class="btn">About Me</a>
+		</div>
+	</section>
+	<section class="about">
+		<div class="heading">
+			<h2>About Me</h2>
+		</div>
+		<div class="content">
+			<div class="contentBx w50">
+				<h3>Afif Bajra Hawari Anhar</h3>
+				<p><span>Hello</span>
+					My name is Afif Bajra, I am a student at Muhammadiyah University, North Sumatra
+					I really like creating websites like this, it's my dream to become
+					A Game Developer or Web Full-Stack Developer To Achieve That I Often Study Outside School Lessons
+					to achieve that goal, and in the future maybe I will hone my skills in this section
+					Front End Web Developer<br><br>
+
+					The reason I want to become a game developer is because of my love for games
+					Very high and that became the basis for me wanting to make my own game,
+					I Also Intend to Create a Mobile App To Cover More Consumers.
+					That's all about me. If you want to know more about me, you can visit the contact page
+					Find Out More About Me.
+	 			</p>
+			</div>
+			<div class="w50">
+				<img src="img/Apip.jpg" class="img">
+			</div>
+		</div>
+	</section>
+
+	<section class="work">
+		<div class="heading">
+			<h2>Achievments</h2>
+			<p></p>
+		</div>
+		<div class="content">
+			<div class="workBx">
+				<img src="img/Sertifikat_page-0001.jpg">
+			</div>
+			<div class="workBx">
+				<img src="img/Futsal.jpg">
+			</div>
+		</div>
+	</section>
+
+	<section class="copyright">
+		<p>Copyright 2024 <i class="fa fa-copyright"></i> @apipbjra_ <br> Made With <i class=""></i> Afif Bajra </p>
+	</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script type="text/javascript">
+		
+		var typed = new Typed(".auto-input",{
+		strings: ["Student", "From Universitas Muhammadiyah Sumatera Utara",],
+		typeSpeed: 100,
+		backSpeed: 200,
+		loop: true
+	});
+		
+		window.addEventListener('scroll', function(){
+			var header = document.querySelector('header');
+			header.classList.toggle('sticky', window.scrollY > 0);
+		});
+	</script>
+</body>
+</html>
